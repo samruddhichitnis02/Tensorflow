@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tensorflow 2.0</title>
+</head>
+<body>
+    <h1> Churn Prediction </h1>
+
+
+    <form action="{{ url_for('predict')}}" method="post">
+        <input type = "number" name = "CreditScore" placeholder="CreditScore"  required="required" />
+        <input type = 'text' name="Country" placeholder="Country" required = "required"/>
+        <input type = 'text' name="Gender" placeholder="Gender" required = "required"/>
+
+
+        <input type = "number" name = "Age" placeholder="Age"  required="required" />
+        <input type = "number" name = "Tenure" placeholder="Tenure"  required="required" />
+        <input type = "number" name = "Balance" placeholder="Balance" step = "any" required="required" />
+
+        <input type = "number" name = "Products" placeholder="Products"  required="required" />
+        <input type = "number" name = "CreditCard" placeholder="CreditCard"  required="required" />
+        <input type = "number" name = "Member" placeholder="Member"  required="required" />
+        <input type = "number" name = "Salary" placeholder="Salary" step = "any" required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+
+
+    </form>
+    <br>
+    <br>
+
+</body>
+</html>
